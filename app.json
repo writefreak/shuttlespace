@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "shuttlespace",
+    "slug": "shuttlespace",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/shuttlespace.png",
+    "scheme": "shuttlespace",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/shuttlespace.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/shuttlespace.png",
+          "imageWidth": 500,
+          // "preventAutoHide": true,
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
