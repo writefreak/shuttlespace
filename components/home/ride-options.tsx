@@ -6,18 +6,23 @@ import Shuttle from "../svg/shuttle";
 
 export default function RideOptions() {
   return (
-    <View className="p-4 md:p-0 flex flex-row flex-wrap gap-3 items-center justify-center">
-      {rides.map((r) => (
-        <TouchableOpacity
-          key={r.id}
-          className="rounded-2xl w-[13.6rem] h-32 md:w-[5.1rem] md:h-20  bg-gray-100 flex items-center justify-center"
-        >
-          <View className="flex items-center gap-3 md:gap-1">
-            {r.icon}
-            <Text className="text-center text-xl md:text-sm">{r.name}</Text>
-          </View>
-        </TouchableOpacity>
-      ))}
+    <View className="pt-8">
+      <Text className="text-2xl md:text-xl font-semibold pb-4 px-4">
+        Explore by popular way
+      </Text>
+      <View className="p-4 md:p-0 flex flex-row flex-wrap gap-3 items-center justify-center md:justify-start">
+        {rides.map((r) => (
+          <TouchableOpacity
+            key={r.id}
+            className="rounded-2xl w-[13.6rem] h-32 md:w-[5.1rem] md:h-20  bg-gray-100 flex items-center justify-center"
+          >
+            <View className="flex items-center gap-3 md:gap-1">
+              {r.icon}
+              <Text className="text-center text-xl md:text-sm">{r.name}</Text>
+            </View>
+          </TouchableOpacity>
+        ))}
+      </View>
     </View>
   );
 }
